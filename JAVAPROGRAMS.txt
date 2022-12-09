@@ -1,0 +1,198 @@
+SUM OF ARRAYS
+
+class SumOfArrays{
+    public static void main(String args[]){
+        int items[] = {10,20,30,40};
+        int sum = 0;
+        for(int i=0 ; i<items.length; i++){
+            sum += items[i];
+        }
+        System.out.println("Sum is :" + sum);
+    }
+}
+
+
+ODD EVEN
+
+class OddEvennum{
+    public staic void main(String args[]){
+        int num = 20;
+        if(num % 2 == 0){
+            System.out.println("NUMBER IS EVEN");
+        }
+        else{
+            System.out.println("NUMBER IS ODD");
+        }
+    }
+}
+
+
+
+PRIME NUMBER
+
+class PrimeNumber
+{
+   public static void main(String[] args)
+   {
+       int n = 13;
+       boolean prime = true;
+       
+       for(int i =2; i<n ; i++){
+           if(n%i==0){
+               prime = false;
+               break;
+           }
+       }
+       System.out.println(prime);
+   }
+}
+
+
+REVERSE A NUMBER
+
+class ReverseNumber {
+    public static void main(String[] args) {
+        int n = 234 , Reverse = 0 , lastDigit;
+        
+        while(n>0){
+            lastDigit = n % 10;
+            Reverse = Reverse * 10 + lastDigit;
+            n = n/10;
+        }
+        System.out.println(Reverse);
+    }
+}
+
+
+
+REVERSE A STRING
+
+public class ReverseString {
+    public static void main(String[] args) {
+    
+        String str="ABCD";
+        String rev="";
+        int len=str.length();
+        for(int i = len-1;i>=0;i--)
+        {
+            rev = rev + str.charAt(i); 
+        }
+        System.out.println("Revered string is:"+ rev);
+}
+}
+
+
+EXCEPTION HANDLING
+
+class EXP {
+    public static void main(String[] args) {
+        System.out.println("START");
+        
+        int a=10 , b = 0 , c;
+        
+        try{
+            c =a/b;
+            System.out.println(c);
+        }
+        catch(Exception e){
+            System.out.println("cannot be divided by 0");
+        }
+        System.out.println("END");
+    }
+}
+
+
+VOWELS
+
+
+class VOWELS {
+    public static void main(String[] args) {
+        String s = "Hello Tanmay";
+        int counter=0;
+        
+        s = s.toLowerCase();
+        
+        for(int i =0 ; i<s.length() ; i++){
+            char ch = s.charAt(i);
+            System.out.println(ch);
+            if( ch=='a' || ch=='e' ||  ch='i'){
+                counter ++;
+            }
+        }
+        System.out.println(counter);
+    }
+}
+
+FACTORIAL
+
+class FACT {
+    public static void main(String[] args) {
+        int n =5 , fact=1 , i;
+        
+        for(i = 1 ; i<=n ; i++){
+            fact = fact * i;
+        }
+        System.out.println(fact);
+    }
+}
+
+INHERITANCE
+
+class Animal{  
+public void eat(){
+    System.out.println("eating...");
+}  
+}  
+
+class Dog extends Animal{  
+public void bark(){
+    System.out.println("barking...");
+}  
+}  
+
+class Display{  
+    public static void main(String args[]){  
+        Dog d=new Dog();  
+        d.bark();  
+        d.eat();  
+        
+    }
+} 
+
+
+ABSTARCTION WITH ABSTRACT AND INTERFACE
+
+abstract class Animal{
+    abstract void legs();
+}
+
+class Dog extends Animal{
+    void legs(){
+        System.out.println("Have 4 legs");
+    }
+}
+
+class Hen extends Animal{
+    void legs(){
+        System.out.println("Have 2 legs");
+    }
+}
+
+class Display{
+    public static void main(String args[]){
+        Dog D = new Dog();
+        D.legs();
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
